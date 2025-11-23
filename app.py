@@ -9,7 +9,7 @@ import ast
 import pythainlp
 mimerender = mimerender.FlaskMimeRender()
 
-render_json = lambda **args: json.dumps(args)
+render_json = lambda **args: json.dumps(args, ensure_ascii=False)
 
 
 app = Flask(__name__)
