@@ -407,7 +407,7 @@ def getData(word):
 	def callThphonemes(Klon):
 		print (Klon)
 		# url = "https://th-phonetic.herokuapp.com/?poemsy="
-		url = "http://170.64.173.219:8888/th-phonetic.php?poemsy="
+		url = "https://thai-phonetic.fly.dev/th-phonetic.php?poemsy="
 		response = requests.get(url+Klon)
 		response = response.json()
 		data = response.get("phonetic")
